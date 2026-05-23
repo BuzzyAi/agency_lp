@@ -37,20 +37,20 @@
       "role": "text on light background (footer area)"
     },
     {
-      "hex": "#F59E0B",
+      "hex": "#F5C400",
       "role": "primary accent / CTA button fill / active state"
     },
     {
-      "hex": "#D97706",
-      "role": "accent hover / darker amber variation"
+      "hex": "#D4A800",
+      "role": "accent hover / darker yellow variation"
     },
     {
-      "hex": "#FCD34D",
+      "hex": "#FFE566",
       "role": "glow / gradient warm highlight stop"
     },
     {
-      "hex": "#92400E",
-      "role": "deep amber / dark accent stop in gradients"
+      "hex": "#7A5C00",
+      "role": "deep yellow / dark accent stop in gradients"
     },
     {
       "hex": "#000000",
@@ -81,7 +81,7 @@
       "text_transform": "none",
       "text_decoration": "none",
       "text_alignment": "left",
-      "color_hex": "#F59E0B"
+      "color_hex": "#F5C400"
     },
     {
       "role": "section heading",
@@ -117,7 +117,7 @@
       "text_transform": "uppercase",
       "text_decoration": "none",
       "text_alignment": "left",
-      "color_hex": "#F59E0B"
+      "color_hex": "#F5C400"
     },
     {
       "role": "caption / tag text",
@@ -172,7 +172,7 @@
         "structural_role": "hero area",
         "layout_within": "centered stack — logo top-left + centered nav + centered headline block + dual CTA buttons inline + centered 3D illustration; scrolling marquee text ribbon at bottom",
         "approximate_height": "100vh",
-        "background": "#0A0D08 with radial dark-green ambient glow behind 3D character"
+        "background": "#0D0B00 with radial dark-yellow ambient glow behind 3D character"
       },
       {
         "section_id": "section_3",
@@ -225,34 +225,29 @@
       },
       {
         "section_id": "section_10",
-        "structural_role": "final CTA",
-        "layout_within": "centered stack",
-        "approximate_height": "60vh",
-        "background": "linear gradient #0D0D0D to #1A0E00 with decorative amber arc glow"
+        "structural_role": "pricing / plans",
+        "layout_within": "grid 3 cols centered",
+        "approximate_height": "auto/content-driven",
+        "background": "#0D0D0D"
       },
       {
         "section_id": "section_11",
+        "structural_role": "FAQ / accordion",
+        "layout_within": "single centered column",
+        "approximate_height": "auto/content-driven",
+        "background": "#111111"
+      },
+      {
+        "section_id": "section_12",
         "structural_role": "footer",
-        "layout_within": "grid 4–5 cols",
+        "layout_within": "multi-column grid (logo + nav links + social icons)",
         "approximate_height": "auto/content-driven",
         "background": "#0D0D0D"
       }
     ],
-    "max_width_container": "yes, ~1280–1440px",
-    "alignment_system": "fully centered — all hero content center-aligned horizontally",
-    "density": "spacious",
-    "responsive_breakpoints_visible": "desktop only visible; card grid suggests responsive collapse to single column on mobile"
-  },
-  "spacing": {
-    "base_unit": "8px",
-    "padding_scale": "8px to 64px in 8px increments; hero vertical padding ~80–100px top",
-    "gap_scale": "12px between CTA buttons inline; 40–48px between headline block and illustration; 24px between nav items",
-    "section_vertical_rhythm": "single hero section occupying full viewport; logo strip ~56px height at bottom",
-    "consistency": "systematic"
-  },
-  "shapes_and_geometry": {
-    "border_radius": "primary CTA button: fully pill-shaped (~50px); ghost button: fully pill-shaped (~50px); nav CTA: fully pill-shaped; logo badge: 50% circular; 3D robot character: square body with heavily rounded corners (~24–32px)",
-    "geometric_motifs": "large circular ring/arc in lower-left background (low opacity, outlined stroke); two diagonal scrolling marquee text ribbons — one bottom-left to top-right, one bottom-right extending across — acting as kinetic decorative bands; elliptical ambient glow behind 3D character",
+    "spacing_system": "8px base unit; common values 8, 16, 24, 32, 48, 64, 80, 96px",
+    "max_content_width": "1200–1280px centered",
+    "border_radius_tokens": "pill = 9999px; card = 12–16px; input = 8px; badge = 9999px",
     "dividers": "none — sections separated by background contrast; logo strip divided from hero by edge of viewport",
     "component_silhouettes": "pill-shaped buttons; circular logo badge; rectangular nav bar; 3D boxy-rounded robot as central illustration"
   },
@@ -262,19 +257,19 @@
       "direction": "center, slightly above midpoint",
       "color_stops": [
         {
-          "color": "#1A2E14",
+          "color": "#2E2800",
           "position": "0%"
         },
         {
-          "color": "#0A0D08",
+          "color": "#0D0B00",
           "position": "65%"
         },
         {
-          "color": "#060806",
+          "color": "#080600",
           "position": "100%"
         }
       ],
-      "applied_to": "full hero section background behind 3D character — creates dark green ambient depth",
+      "applied_to": "full hero section background behind 3D character — creates dark yellow ambient depth",
       "opacity": 1.0
     },
     {
@@ -282,11 +277,11 @@
       "direction": "to bottom",
       "color_stops": [
         {
-          "color": "#0A0D08",
+          "color": "#0D0B00",
           "position": "0%"
         },
         {
-          "color": "#060806",
+          "color": "#080600",
           "position": "100%"
         }
       ],
@@ -297,15 +292,15 @@
       "direction": "135deg",
       "color_stops": [
         {
-          "color": "#A8FF3E",
+          "color": "#FFE566",
           "position": "0%"
         },
         {
-          "color": "#4ADE80",
+          "color": "#F5C400",
           "position": "50%"
         },
         {
-          "color": "#22C55E",
+          "color": "#D4A800",
           "position": "100%"
         }
       ],
@@ -316,11 +311,11 @@
       "direction": "top-center origin",
       "color_stops": [
         {
-          "color": "#38FF80",
+          "color": "#FFE566",
           "position": "0%"
         },
         {
-          "color": "#0A0D08",
+          "color": "#0D0B00",
           "position": "70%"
         }
       ],
@@ -341,12 +336,12 @@
       },
       {
         "style": "colored glow",
-        "color_hex": "#22C55E",
+        "color_hex": "#F5C400",
         "opacity": 0.25,
         "blur": "48px",
         "spread": "0px",
         "offset": "0px 0px",
-        "applied_to": "primary CTA button green glow"
+        "applied_to": "primary CTA button yellow glow"
       },
       {
         "style": "soft drop shadow",
@@ -362,17 +357,17 @@
   },
   "imagery_and_icons": {
     "images_present": true,
-    "image_treatments": "hero: centered 3D rendered robot character with subsurface ambient green lighting and drop shadow — no photo overlay; no filter applied; character presented on transparent background composited over dark gradient",
-    "icon_style": "filled flat monochromatic; nav logo uses circular badge with X-shaped icon in white on dark green fill; partner logos in logo strip are flat white monochrome",
+    "image_treatments": "hero: centered 3D rendered robot character with subsurface ambient yellow lighting and drop shadow — no photo overlay; no filter applied; character presented on transparent background composited over dark gradient",
+    "icon_style": "filled flat monochromatic; nav logo uses circular badge with X-shaped icon in black on dark yellow fill; partner logos in logo strip are flat white monochrome",
     "icon_size_range": "logo badge ~28–32px; partner logos in strip ~16–24px height",
-    "illustration_style": "3D rendered character — boxy humanoid robot with rounded square body, glowing spectrum arc on head (rainbow gradient from blue to green), dark matte body panels, white circular eye-lights; presented as hero centerpiece illustration"
+    "illustration_style": "3D rendered character — boxy humanoid robot with rounded square body, glowing spectrum arc on head (yellow to white gradient), dark matte body panels, white circular eye-lights; presented as hero centerpiece illustration"
   },
   "visual_effects": {
     "textures": "possible very subtle dark noise grain on page background at ~3% opacity; not confirmed",
     "overlays": "none over character; page background acts as implicit dark overlay on full composition",
     "blur_effects": "none visible in static frame; navbar may use backdrop-filter blur",
     "patterns": "none repeating; large low-opacity outlined circular ring in lower-left hero quadrant as decorative geometric motif",
-    "other_effects": "two diagonal scrolling marquee text bands (kinetic marquee ribbons) — lower-left band curves bottom-left to upper-right, right band exits frame right; rainbow spectrum gradient arc on robot head acts as dynamic color focal point against monochromatic dark background; elliptical ambient green light pool beneath character"
+    "other_effects": "two diagonal scrolling marquee text bands (kinetic marquee ribbons) — lower-left band curves bottom-left to upper-right, right band exits frame right; yellow gradient arc on robot head acts as dynamic color focal point against monochromatic dark background; elliptical ambient yellow light pool beneath character"
   },
   "motion_and_interactivity_hints": {
     "implied_transitions": "marquee text ribbons imply continuous CSS marquee scroll animation; CTA button glow suggests pulse/breathe hover animation; 3D character may have idle rotation or float animation implied by centered presentation",
@@ -385,9 +380,9 @@
       "component_type": "primary button",
       "shape": "fully pill-shaped",
       "size_approximate": "44–48px height, ~160px width",
-      "background": "linear gradient 135deg #A8FF3E to #22C55E",
+      "background": "linear gradient 135deg #FFE566 to #D4A800",
       "border": "none",
-      "shadow": "colored glow #22C55E at 25% opacity, blur 48px",
+      "shadow": "colored glow #F5C400 at 25% opacity, blur 48px",
       "states_visible": "default only"
     },
     {
@@ -403,7 +398,7 @@
       "component_type": "top navigation bar",
       "shape": "square",
       "size_approximate": "56–64px height, full-width",
-      "background": "rgba(10,13,8,0.85) with backdrop blur",
+      "background": "rgba(13,11,0,0.85) with backdrop blur",
       "border": "none",
       "shadow": "none",
       "states_visible": "default sticky"
@@ -412,7 +407,7 @@
       "component_type": "nav CTA button",
       "shape": "fully pill-shaped",
       "size_approximate": "36px height, ~120px width",
-      "background": "#1A2E14 or dark green fill",
+      "background": "#2E2800 or dark yellow fill",
       "border": "none",
       "shadow": "none",
       "states_visible": "default only"
@@ -421,7 +416,7 @@
       "component_type": "logo badge / favicon",
       "shape": "50% circular",
       "size_approximate": "28–32px diameter",
-      "background": "#1A3A1A dark green",
+      "background": "#2E2800 dark yellow",
       "border": "none",
       "shadow": "none",
       "states_visible": "default only"
@@ -439,7 +434,7 @@
       "component_type": "partner logo strip",
       "shape": "square / full-width",
       "size_approximate": "56px height",
-      "background": "#060806",
+      "background": "#080600",
       "border": "none",
       "shadow": "none",
       "states_visible": "default only"
@@ -469,12 +464,12 @@
       "kinetic-typography",
       "monochromatic-base"
     ],
-    "visual_hierarchy_strength": "strong — oversized centered headline commands immediate attention, single vibrant green accent on primary CTA creates clear action focus, 3D character anchors visual weight at center",
+    "visual_hierarchy_strength": "strong — oversized centered headline commands immediate attention, single vibrant yellow accent on primary CTA creates clear action focus, 3D character anchors visual weight at center",
     "contrast_level": "high",
-    "color_temperature": "cool",
+    "color_temperature": "warm",
     "vibrancy": "vibrant",
     "drama": "dramatic",
     "design_consistency": "highly systematic",
-    "primary_design_language": "Dark-mode AI product hero with near-black background, oversized centered display typography, a single vivid green accent (#A8FF3E–#22C55E gradient) on the primary CTA, a 3D boxy robot character as central focal illustration, and kinetic diagonal marquee text ribbons reinforcing motion and brand energy"
+    "primary_design_language": "Dark-mode AI product hero with near-black background, oversized centered display typography, a single vivid yellow accent (#FFE566–#D4A800 gradient) on the primary CTA, a 3D boxy robot character as central focal illustration, and kinetic diagonal marquee text ribbons reinforcing motion and brand energy"
   }
 }
