@@ -1,0 +1,427 @@
+{
+  "site_meta": {
+    "site_name": "Buzzy",
+    "tagline": "Tecnologia que serve ao negócio. Não o contrário.",
+    "locale": "pt-BR",
+    "direction": "ltr",
+    "tone": "luxuoso e minimalista — linguagem contida, precisa e elegante; frases curtas com peso; sem hipérboles; confiança transmitida pelo que não se diz tanto quanto pelo que se diz",
+    "target_audience": "líderes, fundadores e diretores de empresas de médio e grande porte que buscam excelência operacional e soluções de software feitas sob medida",
+    "website_type": "agência de consultoria — site institucional com geração de leads",
+    "seo": {
+      "page_title": "Buzzy — Consultoria em software, automação e melhoria de negócios",
+      "meta_description": "Desenvolvemos software sob demanda, automatizamos processos e aprimoramos operações empresariais com precisão e discrição. Para empresas que exigem o melhor.",
+      "og_image_description": "fundo quase preto com tipografia serifada branca minimal exibindo o nome da agência e tagline, detalhe sutil em dourado fosco no canto inferior esquerdo, composição editorial assimétrica",
+      "generated": true
+    },
+    "generated": true,
+    "placeholder": false
+  },
+  "sections": [
+    {
+      "section_id": "section_1",
+      "section_type": "navigation",
+      "purpose": "Orientar discretamente o visitante entre as seções sem competir com o conteúdo — navegação invisível até ser necessária",
+      "generated": true,
+      "placeholder": false,
+      "content": {
+        "logo_text": "Buzzy",
+        "logo_has_image": true,
+        "nav_items_count": 4,
+        "nav_items_labels": [
+          "Serviços",
+          "Como trabalhamos",
+          "Casos",
+          "Contato"
+        ],
+        "has_cta_button": true,
+        "cta_label": "Iniciar projeto",
+        "has_secondary_action": false,
+        "sticky": true,
+        "design_note": "fundo translúcido com blur sutil ao rolar; tipografia pequena, espaçada; sem bordas ou sombras pesadas — presença discreta e refinada"
+      }
+    },
+    {
+      "section_id": "section_2",
+      "section_type": "hero",
+      "purpose": "Estabelecer posicionamento premium e criar desejo antes de explicar qualquer serviço — menos proposta comercial, mais declaração de princípio",
+      "generated": true,
+      "placeholder": false,
+      "content": {
+        "headline": "Operações mais inteligentes. Software que pertence a você.",
+        "subheadline": "Consultoria especializada em automação de processos, desenvolvimento sob demanda e evolução operacional para empresas que não aceitam soluções genéricas.",
+        "body": "Trabalhamos com um número restrito de clientes por vez. Cada projeto recebe atenção total — da estratégia à entrega.",
+        "primary_cta": {
+          "label": "Conversar sobre seu projeto",
+          "destination_hint": "seção de contato ou formulário de briefing"
+        },
+        "secondary_cta": {
+          "label": "Ver como trabalhamos",
+          "destination_hint": "seção de processo ou metodologia"
+        },
+        "media": {
+          "type": "illustration",
+          "description": "composição abstrata e geométrica minimalista — linhas finas em cinza sobre fundo quase branco, evocando fluxogramas ou arquitetura de sistemas sem ser literal; sem figuras humanas, sem ícones tecnológicos óbvios",
+          "treatment": "full-bleed à direita, ocupando metade do hero; sem moldura"
+        },
+        "social_proof_hint": "Mais de 40 projetos entregues em 8 setores diferentes"
+      }
+    },
+    {
+      "section_id": "section_3",
+      "section_type": "features",
+      "purpose": "Apresentar os três pilares de serviço com precisão — sem listas exaustivas, sem superlativos; cada serviço deve parecer inevitável para o visitante certo",
+      "generated": true,
+      "placeholder": false,
+      "content": {
+        "headline": "O que fazemos",
+        "subheadline": "Três áreas de atuação. Um único padrão de entrega.",
+        "design_note": "layout em três colunas com muito espaço negativo; ícones minimalistas de linha fina; sem cards com bordas pesadas — divisores sutis ou espaçamento como separação",
+        "items": [
+          {
+            "icon_description": "ícone de contorno ultrafino representando um ciclo de engrenagens interligadas — automação e continuidade",
+            "headline": "Automação de processos",
+            "body": "Mapeamos, redesenhamos e automatizamos fluxos operacionais que consomem tempo e geram erros. O resultado são operações que funcionam com menos intervenção humana e mais consistência.",
+            "detail": "RPA, integrações entre sistemas, fluxos documentais, notificações automáticas, conciliações e relatórios autônomos.",
+            "generated": true,
+            "placeholder": false
+          },
+          {
+            "icon_description": "ícone de contorno ultrafino de um único bloco de código entre colchetes — software preciso e sob medida",
+            "headline": "Software sob demanda",
+            "body": "Desenvolvemos sistemas, plataformas e ferramentas internas criados especificamente para o seu negócio. Sem funcionalidades desnecessárias. Sem compromissos com roadmaps de terceiros.",
+            "detail": "Sistemas internos, plataformas B2B, painéis de gestão, APIs, integrações customizadas e aplicações web.",
+            "generated": true,
+            "placeholder": false
+          },
+          {
+            "icon_description": "ícone de contorno ultrafino de uma seta ascendente emergindo de um gráfico de linha — evolução estratégica",
+            "headline": "Melhoria de negócios",
+            "body": "Analisamos onde tecnologia e processo se atritam e propomos intervenções cirúrgicas. Não vendemos transformação digital — entregamos resultados mensuráveis em operações reais.",
+            "detail": "Diagnóstico operacional, redesenho de processos, adoção de ferramentas, treinamento de equipes e acompanhamento de indicadores.",
+            "generated": true,
+            "placeholder": false
+          }
+        ]
+      }
+    },
+    {
+      "section_id": "section_4",
+      "section_type": "how_it_works",
+      "purpose": "Transmitir rigor metodológico e confiança sem parecer burocrático — o processo deve sinalizar sofisticação e atenção ao cliente",
+      "generated": true,
+      "placeholder": false,
+      "content": {
+        "headline": "Como trabalhamos",
+        "subheadline": "Um processo estruturado que respeita o seu tempo e protege o seu investimento.",
+        "design_note": "numeração grande e esparsa; texto compacto; muito espaço negativo entre etapas; linha conectora fina e discreta",
+        "steps": [
+          {
+            "step_number": 1,
+            "headline": "Escuta",
+            "body": "Toda colaboração começa por compreender — o negócio, os gargalos, os objetivos não ditos. Uma conversa sem agenda de venda.",
+            "media_description": "composição minimalista com dois elementos geométricos próximos, representando diálogo e proximidade, fundo branco com linhas em cinza-claro"
+          },
+          {
+            "step_number": 2,
+            "headline": "Diagnóstico",
+            "body": "Mapeamos processos, sistemas existentes e pontos de fricção. O diagnóstico é entregue como documento — independente de qualquer contratação posterior.",
+            "media_description": "representação abstrata de um mapa de processos — nós interligados com linhas finas, alguns em destaque sutil, fundo neutro"
+          },
+          {
+            "step_number": 3,
+            "headline": "Proposta",
+            "body": "Uma proposta clara: escopo definido, prazo realista, investimento transparente. Sem letra pequena, sem surpresas no caminho.",
+            "media_description": "documento estilizado minimalista com linhas de texto representadas por traços horizontais e um detalhe de assinatura ou aprovação sutil"
+          },
+          {
+            "step_number": 4,
+            "headline": "Execução",
+            "body": "Desenvolvemos em ciclos curtos com pontos de revisão frequentes. Você acompanha o progresso — sem precisar entender código.",
+            "media_description": "grade de blocos organizados representando sprints ou fases de desenvolvimento, alguns preenchidos e outros em progresso, estilo minimalista geométrico"
+          },
+          {
+            "step_number": 5,
+            "headline": "Entrega e continuidade",
+            "body": "Entregamos com documentação completa e transferência de conhecimento. E permanecemos disponíveis para a evolução do que construímos juntos.",
+            "media_description": "seta curva suave retornando ao ponto de partida — ciclo de melhoria contínua representado de forma abstrata e elegante"
+          }
+        ]
+      }
+    },
+    {
+      "section_id": "section_5",
+      "section_type": "about",
+      "purpose": "Humanizar a agência com discrição — mostrar quem são sem exibicionismo; a credibilidade vem do tom, não da quantidade de informação",
+      "generated": true,
+      "placeholder": false,
+      "content": {
+        "headline": "Uma agência pequena por escolha.",
+        "body": "A Buzzy não busca escala. Buscamos precisão. Somos uma equipe enxuta de especialistas em tecnologia, processos e design de sistemas — comprometidos com um número limitado de clientes que valorizam qualidade acima de velocidade. Cada projeto que aceitamos é um projeto que somos capazes de fazer com excelência.",
+        "media": {
+          "type": "image",
+          "description": "espaço de trabalho minimalista e sofisticado — mesa de madeira escura com um computador, caderno aberto e xícara de café, luz lateral dramática vinda de uma janela estreita, paleta em preto, branco e bege"
+        },
+        "stats": [
+          {
+            "value": "40+",
+            "label": "projetos entregues",
+            "generated": true,
+            "placeholder": true
+          },
+          {
+            "value": "8",
+            "label": "setores atendidos",
+            "generated": true,
+            "placeholder": true
+          },
+          {
+            "value": "100%",
+            "label": "dos projetos dentro do prazo acordado",
+            "generated": true,
+            "placeholder": true
+          }
+        ],
+        "design_note": "estatísticas em tipografia grande e esparsa, sem cards — números flutuam sobre o fundo"
+      }
+    },
+    {
+      "section_id": "section_6",
+      "section_type": "custom",
+      "purpose": "Exibir casos de uso ou setores atendidos de forma editorializada — sem revelar clientes confidenciais, mas sinalizando profundidade de experiência",
+      "generated": true,
+      "placeholder": true,
+      "content": {
+        "section_description": "Seção editorial de casos ou setores — exibida como uma grade esparsa de cards minimalistas, cada um descrevendo um tipo de problema resolvido e o impacto gerado, sem mencionar nomes de clientes.",
+        "headline": "Problemas que resolvemos",
+        "subheadline": "Contextos diferentes. A mesma exigência de resultado.",
+        "design_note": "grid assimétrico 2x2 ou 3 colunas; cards com borda fina ou apenas espaçamento como separação; hover sutil; sem imagens nos cards — só texto",
+        "content_blocks": [
+          {
+            "type": "list",
+            "content": [
+              {
+                "sector": "Indústria",
+                "problem_headline": "Conciliação manual que consumia três dias por mês",
+                "outcome": "Automatizamos o processo. Hoje leva 40 minutos e não precisa de intervenção humana.",
+                "generated": true,
+                "placeholder": true
+              },
+              {
+                "sector": "Varejo",
+                "problem_headline": "Relatórios de estoque desatualizados e decisões no escuro",
+                "outcome": "Desenvolvemos um painel integrado em tempo real. A equipe passou a decidir com dados, não com intuição.",
+                "generated": true,
+                "placeholder": true
+              },
+              {
+                "sector": "Serviços financeiros",
+                "problem_headline": "Onboarding de clientes lento e propenso a erros",
+                "outcome": "Redesenhamos e automatizamos o fluxo de onboarding. O tempo médio caiu de 5 dias para menos de 4 horas.",
+                "generated": true,
+                "placeholder": true
+              },
+              {
+                "sector": "Saúde",
+                "problem_headline": "Comunicação entre sistemas legados causava retrabalho diário",
+                "outcome": "Integramos os sistemas via API customizada. Os times pararam de digitar a mesma informação duas vezes.",
+                "generated": true,
+                "placeholder": true
+              }
+            ],
+            "generated": true,
+            "placeholder": true
+          },
+          {
+            "type": "cta",
+            "content": {
+              "label": "Ver mais casos",
+              "destination_hint": "página de portfólio ou seção expandida de casos"
+            },
+            "generated": true,
+            "placeholder": false
+          }
+        ]
+      }
+    },
+    {
+      "section_id": "section_7",
+      "section_type": "testimonials",
+      "purpose": "Reforçar credibilidade com vozes externas — tom sóbrio, sem elogios efusivos; depoimentos que soam como avaliações honestas de executivos",
+      "generated": true,
+      "placeholder": true,
+      "content": {
+        "headline": "O que dizem quem trabalhou conosco",
+        "design_note": "depoimentos em tipografia grande, serifada, sem aspas decorativas exageradas; atribuição discreta abaixo; fundo neutro; máximo dois depoimentos visíveis por vez",
+        "items": [
+          {
+            "quote": "O que nos surpreendeu não foi apenas o que entregaram — foi a clareza com que entenderam o problema antes de propor qualquer solução. Raros de encontrar.",
+            "attribution_role": "Diretor de Operações em empresa de logística de médio porte",
+            "avatar_description": "retrato discreto em preto e branco de homem de meia-idade com expressão serena, fundo neutro claro",
+            "generated": true,
+            "placeholder": true
+          },
+          {
+            "quote": "Contratamos para um projeto de automação e terminamos com uma visão completamente diferente dos nossos processos internos. O diagnóstico sozinho já valeu o investimento.",
+            "attribution_role": "CEO de empresa de serviços financeiros",
+            "avatar_description": "retrato em preto e branco de mulher jovem com postura confiante, fundo levemente desfocado",
+            "generated": true,
+            "placeholder": true
+          },
+          {
+            "quote": "Comunicação impecável durante todo o projeto. Sabíamos exatamente o que estava acontecendo em cada etapa — sem precisar perguntar.",
+            "attribution_role": "Head de Tecnologia em grupo empresarial familiar",
+            "avatar_description": "retrato discreto em preto e branco de homem com óculos, expressão analítica, fundo neutro",
+            "generated": true,
+            "placeholder": true
+          }
+        ]
+      }
+    },
+    {
+      "section_id": "section_8",
+      "section_type": "faq",
+      "purpose": "Responder objeções comuns de compradores sofisticados — o tom deve ser direto e nunca defensivo",
+      "generated": true,
+      "placeholder": false,
+      "content": {
+        "headline": "Perguntas frequentes",
+        "design_note": "acordeão minimalista, linha de separação fina, sem ícones chamativos — sinal de mais ou chevron discreto",
+        "items": [
+          {
+            "question": "Atendem empresas de qualquer porte?",
+            "answer": "Trabalhamos predominantemente com empresas de médio e grande porte que possuem processos estabelecidos e desejam evoluí-los. Não temos um requisito formal de tamanho — temos um requisito de maturidade e comprometimento com o projeto.",
+            "generated": true,
+            "placeholder": false
+          },
+          {
+            "question": "Qual é o prazo típico de um projeto?",
+            "answer": "Depende do escopo. Diagnósticos e projetos de automação pontuais costumam ser concluídos em quatro a oito semanas. Sistemas sob demanda mais complexos podem levar de três a seis meses. O prazo é acordado na proposta e levado a sério.",
+            "generated": true,
+            "placeholder": false
+          },
+          {
+            "question": "Posso contratar apenas o diagnóstico, sem continuar com o desenvolvimento?",
+            "answer": "Sim. O diagnóstico é um serviço independente e entregável por si só. Muitos clientes o utilizam internamente ou com outras equipes. Não condicionamos o diagnóstico à contratação de etapas posteriores.",
+            "generated": true,
+            "placeholder": false
+          },
+          {
+            "question": "Como é garantida a confidencialidade do nosso negócio?",
+            "answer": "Assinamos acordo de confidencialidade (NDA) antes de qualquer conversa substantiva sobre o seu negócio. A discrição é um padrão de conduta da equipe, não apenas uma cláusula contratual.",
+            "generated": true,
+            "placeholder": false
+          },
+          {
+            "question": "O software entregue fica em nossas mãos?",
+            "answer": "Sempre. Todo código, documentação e ativo digital produzido durante o projeto pertence ao cliente ao final do contrato. Não criamos dependência de plataforma ou de nós mesmos.",
+            "generated": true,
+            "placeholder": false
+          },
+          {
+            "question": "Vocês oferecem suporte após a entrega?",
+            "answer": "Sim. Oferecemos planos de acompanhamento pós-entrega para manutenção, evolução e suporte técnico. Os termos são definidos caso a caso, conforme a necessidade do projeto.",
+            "generated": true,
+            "placeholder": false
+          }
+        ]
+      }
+    },
+    {
+      "section_id": "section_9",
+      "section_type": "cta_section",
+      "purpose": "Convidar — não pressionar — o visitante qualificado a dar o próximo passo; o tom deve preservar o posicionamento premium até o fim",
+      "generated": true,
+      "placeholder": false,
+      "content": {
+        "headline": "Se chegou até aqui, provavelmente temos algo a conversar.",
+        "subheadline": "Conte-nos o desafio. A primeira conversa é sem compromisso e sem agenda de venda.",
+        "primary_cta": {
+          "label": "Iniciar uma conversa",
+          "destination_hint": "formulário de contato ou briefing inicial"
+        },
+        "secondary_cta": {
+          "label": "Conhecer o processo",
+          "destination_hint": "seção como trabalhamos"
+        },
+        "design_note": "fundo escuro (quase preto ou grafite profundo) com texto em branco — inversão elegante que sinaliza encerramento da narrativa; CTA em branco com borda fina, sem preenchimento colorido"
+      }
+    },
+    {
+      "section_id": "section_10",
+      "section_type": "contact",
+      "purpose": "Oferecer um ponto de entrada simples e de baixo atrito para iniciar o contato — formulário enxuto, sem campos desnecessários",
+      "generated": true,
+      "placeholder": true,
+      "content": {
+        "headline": "Entre em contato",
+        "subheadline": "Respondemos em até um dia útil.",
+        "form_fields": [
+          "name",
+          "email",
+          "company",
+          "challenge"
+        ],
+        "form_field_labels": {
+          "name": "Seu nome",
+          "email": "E-mail corporativo",
+          "company": "Empresa",
+          "challenge": "Descreva brevemente o desafio ou o projeto"
+        },
+        "submit_label": "Enviar",
+        "email": "contato@buzzy.com.br",
+        "phone": "+55 (00) 0000-0000",
+        "address": "São Paulo, SP — Brasil",
+        "map_hint": false,
+        "design_note": "formulário de coluna única, campos com apenas borda inferior (sem box completo), tipografia leve; sem elementos decorativos — formulário como documento",
+        "generated": true,
+        "placeholder": true
+      }
+    },
+    {
+      "section_id": "section_11",
+      "section_type": "footer",
+      "purpose": "Encerrar a experiência com a mesma sobriedade com que começou — sem excesso de links, sem ruído visual",
+      "generated": true,
+      "placeholder": true,
+      "content": {
+        "logo_repeated": true,
+        "tagline": "Tecnologia que serve ao negócio.",
+        "column_count": 3,
+        "columns": [
+          {
+            "label": "Serviços",
+            "items": [
+              "Automação de processos",
+              "Software sob demanda",
+              "Melhoria de negócios"
+            ]
+          },
+          {
+            "label": "Empresa",
+            "items": [
+              "Como trabalhamos",
+              "Casos",
+              "Contato"
+            ]
+          },
+          {
+            "label": "Contato",
+            "items": [
+              "contato@buzzy.com.br",
+              "São Paulo, SP — Brasil"
+            ]
+          }
+        ],
+        "has_social_links": true,
+        "social_platforms": [
+          "linkedin"
+        ],
+        "has_legal_links": true,
+        "legal_links_hint": "Política de Privacidade, Termos de Uso",
+        "newsletter_signup": false,
+        "copyright_line": "© 2025 Buzzy. Todos os direitos reservados.",
+        "design_note": "rodapé minimalista com fundo quase preto ou grafite; texto em cinza-claro e branco; sem separadores pesados — apenas espaçamento e hierarquia tipográfica"
+      }
+    }
+  ]
+}

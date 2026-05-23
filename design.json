@@ -1,0 +1,480 @@
+{
+  "color_palette": [
+    {
+      "hex": "#0D0D0D",
+      "role": "page background"
+    },
+    {
+      "hex": "#111111",
+      "role": "alternate section background"
+    },
+    {
+      "hex": "#1A1A1A",
+      "role": "card surface"
+    },
+    {
+      "hex": "#2A2A2A",
+      "role": "divider / input border / tag background"
+    },
+    {
+      "hex": "#3D3D3D",
+      "role": "subtle border / secondary surface"
+    },
+    {
+      "hex": "#6B6B6B",
+      "role": "muted gray / disabled state"
+    },
+    {
+      "hex": "#A0A0A0",
+      "role": "secondary / muted text"
+    },
+    {
+      "hex": "#FFFFFF",
+      "role": "primary text"
+    },
+    {
+      "hex": "#F5F5F5",
+      "role": "text on light background (footer area)"
+    },
+    {
+      "hex": "#F59E0B",
+      "role": "primary accent / CTA button fill / active state"
+    },
+    {
+      "hex": "#D97706",
+      "role": "accent hover / darker amber variation"
+    },
+    {
+      "hex": "#FCD34D",
+      "role": "glow / gradient warm highlight stop"
+    },
+    {
+      "hex": "#92400E",
+      "role": "deep amber / dark accent stop in gradients"
+    },
+    {
+      "hex": "#000000",
+      "role": "hero overlay scrim base",
+      "opacity": 0.6
+    }
+  ],
+  "typography": [
+    {
+      "role": "page title / hero heading",
+      "font_classification": "display",
+      "font_weight": "900",
+      "font_size_relative": "4x–5x body",
+      "letter_spacing": "-0.03em",
+      "line_height": "0.95",
+      "text_transform": "none",
+      "text_decoration": "none",
+      "text_alignment": "left",
+      "color_hex": "#FFFFFF"
+    },
+    {
+      "role": "hero heading italic accent word",
+      "font_classification": "display",
+      "font_weight": "900",
+      "font_size_relative": "4x–5x body",
+      "letter_spacing": "-0.03em",
+      "line_height": "0.95",
+      "text_transform": "none",
+      "text_decoration": "none",
+      "text_alignment": "left",
+      "color_hex": "#F59E0B"
+    },
+    {
+      "role": "section heading",
+      "font_classification": "display",
+      "font_weight": "700",
+      "font_size_relative": "2.5x–3x body",
+      "letter_spacing": "-0.01em",
+      "line_height": "1.1",
+      "text_transform": "none",
+      "text_decoration": "none",
+      "text_alignment": "left",
+      "color_hex": "#FFFFFF"
+    },
+    {
+      "role": "body text",
+      "font_classification": "sans-serif",
+      "font_weight": "400",
+      "font_size_relative": "1x body",
+      "letter_spacing": "normal",
+      "line_height": "1.65",
+      "text_transform": "none",
+      "text_decoration": "none",
+      "text_alignment": "left",
+      "color_hex": "#A0A0A0"
+    },
+    {
+      "role": "overline / label",
+      "font_classification": "sans-serif",
+      "font_weight": "500",
+      "font_size_relative": "0.7x body",
+      "letter_spacing": "0.08em",
+      "line_height": "1.4",
+      "text_transform": "uppercase",
+      "text_decoration": "none",
+      "text_alignment": "left",
+      "color_hex": "#F59E0B"
+    },
+    {
+      "role": "caption / tag text",
+      "font_classification": "sans-serif",
+      "font_weight": "400",
+      "font_size_relative": "0.75x body",
+      "letter_spacing": "0.02em",
+      "line_height": "1.4",
+      "text_transform": "none",
+      "text_decoration": "none",
+      "text_alignment": "left",
+      "color_hex": "#A0A0A0"
+    },
+    {
+      "role": "navigation item",
+      "font_classification": "sans-serif",
+      "font_weight": "400",
+      "font_size_relative": "0.875x body",
+      "letter_spacing": "normal",
+      "line_height": "1",
+      "text_transform": "none",
+      "text_decoration": "none",
+      "text_alignment": "left",
+      "color_hex": "#FFFFFF"
+    },
+    {
+      "role": "metric / stat number",
+      "font_classification": "display",
+      "font_weight": "700",
+      "font_size_relative": "2x–2.5x body",
+      "letter_spacing": "-0.02em",
+      "line_height": "1",
+      "text_transform": "none",
+      "text_decoration": "none",
+      "text_alignment": "left",
+      "color_hex": "#FFFFFF"
+    }
+  ],
+  "layout": {
+    "structure": "fixed top navbar + full-width hero (centered stack, ~100vh) + scrolling logo strip footer",
+    "grid": "single centered column in hero; navbar uses flex row space-between",
+    "sections": [
+      {
+        "section_id": "section_1",
+        "structural_role": "navigation bar",
+        "layout_within": "flex row space-between",
+        "approximate_height": "64px",
+        "background": "#0D0D0D at ~90% opacity with backdrop blur"
+      },
+      {
+        "section_id": "section_2",
+        "structural_role": "hero area",
+        "layout_within": "centered stack — logo top-left + centered nav + centered headline block + dual CTA buttons inline + centered 3D illustration; scrolling marquee text ribbon at bottom",
+        "approximate_height": "100vh",
+        "background": "#0A0D08 with radial dark-green ambient glow behind 3D character"
+      },
+      {
+        "section_id": "section_3",
+        "structural_role": "partner / social proof logo strip",
+        "layout_within": "flex row centered with even spacing",
+        "approximate_height": "80px",
+        "background": "#111111"
+      },
+      {
+        "section_id": "section_4",
+        "structural_role": "about / team intro",
+        "layout_within": "2-column split (text left, image right)",
+        "approximate_height": "auto/content-driven",
+        "background": "#0D0D0D"
+      },
+      {
+        "section_id": "section_5",
+        "structural_role": "stats / metrics cards row",
+        "layout_within": "grid 2–3 cols",
+        "approximate_height": "auto/content-driven",
+        "background": "#1A1A1A"
+      },
+      {
+        "section_id": "section_6",
+        "structural_role": "services / feature grid",
+        "layout_within": "grid 3 cols",
+        "approximate_height": "auto/content-driven",
+        "background": "#0D0D0D"
+      },
+      {
+        "section_id": "section_7",
+        "structural_role": "process / how it works",
+        "layout_within": "2-column split (accordion list left, image right)",
+        "approximate_height": "auto/content-driven",
+        "background": "#111111"
+      },
+      {
+        "section_id": "section_8",
+        "structural_role": "post-launch support / success features",
+        "layout_within": "mixed grid cards + embedded UI mockup",
+        "approximate_height": "auto/content-driven",
+        "background": "#0D0D0D"
+      },
+      {
+        "section_id": "section_9",
+        "structural_role": "testimonials",
+        "layout_within": "centered single card with carousel dots",
+        "approximate_height": "auto/content-driven",
+        "background": "#111111"
+      },
+      {
+        "section_id": "section_10",
+        "structural_role": "final CTA",
+        "layout_within": "centered stack",
+        "approximate_height": "60vh",
+        "background": "linear gradient #0D0D0D to #1A0E00 with decorative amber arc glow"
+      },
+      {
+        "section_id": "section_11",
+        "structural_role": "footer",
+        "layout_within": "grid 4–5 cols",
+        "approximate_height": "auto/content-driven",
+        "background": "#0D0D0D"
+      }
+    ],
+    "max_width_container": "yes, ~1280–1440px",
+    "alignment_system": "fully centered — all hero content center-aligned horizontally",
+    "density": "spacious",
+    "responsive_breakpoints_visible": "desktop only visible; card grid suggests responsive collapse to single column on mobile"
+  },
+  "spacing": {
+    "base_unit": "8px",
+    "padding_scale": "8px to 64px in 8px increments; hero vertical padding ~80–100px top",
+    "gap_scale": "12px between CTA buttons inline; 40–48px between headline block and illustration; 24px between nav items",
+    "section_vertical_rhythm": "single hero section occupying full viewport; logo strip ~56px height at bottom",
+    "consistency": "systematic"
+  },
+  "shapes_and_geometry": {
+    "border_radius": "primary CTA button: fully pill-shaped (~50px); ghost button: fully pill-shaped (~50px); nav CTA: fully pill-shaped; logo badge: 50% circular; 3D robot character: square body with heavily rounded corners (~24–32px)",
+    "geometric_motifs": "large circular ring/arc in lower-left background (low opacity, outlined stroke); two diagonal scrolling marquee text ribbons — one bottom-left to top-right, one bottom-right extending across — acting as kinetic decorative bands; elliptical ambient glow behind 3D character",
+    "dividers": "none — sections separated by background contrast; logo strip divided from hero by edge of viewport",
+    "component_silhouettes": "pill-shaped buttons; circular logo badge; rectangular nav bar; 3D boxy-rounded robot as central illustration"
+  },
+  "gradients": [
+    {
+      "type": "radial",
+      "direction": "center, slightly above midpoint",
+      "color_stops": [
+        {
+          "color": "#1A2E14",
+          "position": "0%"
+        },
+        {
+          "color": "#0A0D08",
+          "position": "65%"
+        },
+        {
+          "color": "#060806",
+          "position": "100%"
+        }
+      ],
+      "applied_to": "full hero section background behind 3D character — creates dark green ambient depth",
+      "opacity": 1.0
+    },
+    {
+      "type": "linear",
+      "direction": "to bottom",
+      "color_stops": [
+        {
+          "color": "#0A0D08",
+          "position": "0%"
+        },
+        {
+          "color": "#060806",
+          "position": "100%"
+        }
+      ],
+      "applied_to": "overall page background beneath hero"
+    },
+    {
+      "type": "linear",
+      "direction": "135deg",
+      "color_stops": [
+        {
+          "color": "#A8FF3E",
+          "position": "0%"
+        },
+        {
+          "color": "#4ADE80",
+          "position": "50%"
+        },
+        {
+          "color": "#22C55E",
+          "position": "100%"
+        }
+      ],
+      "applied_to": "primary CTA button fill"
+    },
+    {
+      "type": "radial",
+      "direction": "top-center origin",
+      "color_stops": [
+        {
+          "color": "#38FF80",
+          "position": "0%"
+        },
+        {
+          "color": "#0A0D08",
+          "position": "70%"
+        }
+      ],
+      "applied_to": "3D robot character top arc / head light strip",
+      "opacity": 0.9
+    }
+  ],
+  "shadows_and_depth": {
+    "shadows": [
+      {
+        "style": "diffuse ambient",
+        "color_hex": "#000000",
+        "opacity": 0.6,
+        "blur": "60px",
+        "spread": "0px",
+        "offset": "0px 20px",
+        "applied_to": "3D robot character base / floor shadow"
+      },
+      {
+        "style": "colored glow",
+        "color_hex": "#22C55E",
+        "opacity": 0.25,
+        "blur": "48px",
+        "spread": "0px",
+        "offset": "0px 0px",
+        "applied_to": "primary CTA button green glow"
+      },
+      {
+        "style": "soft drop shadow",
+        "color_hex": "#000000",
+        "opacity": 0.3,
+        "blur": "20px",
+        "spread": "0px",
+        "offset": "0px 4px",
+        "applied_to": "scrolling marquee ribbon band"
+      }
+    ],
+    "elevation_layers": "navbar floats as topmost layer; scrolling marquee ribbons appear layered over hero background; 3D robot character sits above background glow as focal z-layer; CTA buttons above body text block"
+  },
+  "imagery_and_icons": {
+    "images_present": true,
+    "image_treatments": "hero: centered 3D rendered robot character with subsurface ambient green lighting and drop shadow — no photo overlay; no filter applied; character presented on transparent background composited over dark gradient",
+    "icon_style": "filled flat monochromatic; nav logo uses circular badge with X-shaped icon in white on dark green fill; partner logos in logo strip are flat white monochrome",
+    "icon_size_range": "logo badge ~28–32px; partner logos in strip ~16–24px height",
+    "illustration_style": "3D rendered character — boxy humanoid robot with rounded square body, glowing spectrum arc on head (rainbow gradient from blue to green), dark matte body panels, white circular eye-lights; presented as hero centerpiece illustration"
+  },
+  "visual_effects": {
+    "textures": "possible very subtle dark noise grain on page background at ~3% opacity; not confirmed",
+    "overlays": "none over character; page background acts as implicit dark overlay on full composition",
+    "blur_effects": "none visible in static frame; navbar may use backdrop-filter blur",
+    "patterns": "none repeating; large low-opacity outlined circular ring in lower-left hero quadrant as decorative geometric motif",
+    "other_effects": "two diagonal scrolling marquee text bands (kinetic marquee ribbons) — lower-left band curves bottom-left to upper-right, right band exits frame right; rainbow spectrum gradient arc on robot head acts as dynamic color focal point against monochromatic dark background; elliptical ambient green light pool beneath character"
+  },
+  "motion_and_interactivity_hints": {
+    "implied_transitions": "marquee text ribbons imply continuous CSS marquee scroll animation; CTA button glow suggests pulse/breathe hover animation; 3D character may have idle rotation or float animation implied by centered presentation",
+    "loading_states": "none",
+    "interactive_states_visible": "primary CTA button in default filled state; ghost button in default outlined state; nav CTA button in default filled state",
+    "animation_style_hints": "smooth and continuous — marquee ribbons, ambient glow, and floating character suggest eased infinite animations; likely 60fps CSS or JS-driven"
+  },
+  "component_patterns": [
+    {
+      "component_type": "primary button",
+      "shape": "fully pill-shaped",
+      "size_approximate": "44–48px height, ~160px width",
+      "background": "linear gradient 135deg #A8FF3E to #22C55E",
+      "border": "none",
+      "shadow": "colored glow #22C55E at 25% opacity, blur 48px",
+      "states_visible": "default only"
+    },
+    {
+      "component_type": "ghost button",
+      "shape": "fully pill-shaped",
+      "size_approximate": "44–48px height, ~140px width",
+      "background": "transparent",
+      "border": "1px solid rgba(255,255,255,0.25)",
+      "shadow": "none",
+      "states_visible": "default only"
+    },
+    {
+      "component_type": "top navigation bar",
+      "shape": "square",
+      "size_approximate": "56–64px height, full-width",
+      "background": "rgba(10,13,8,0.85) with backdrop blur",
+      "border": "none",
+      "shadow": "none",
+      "states_visible": "default sticky"
+    },
+    {
+      "component_type": "nav CTA button",
+      "shape": "fully pill-shaped",
+      "size_approximate": "36px height, ~120px width",
+      "background": "#1A2E14 or dark green fill",
+      "border": "none",
+      "shadow": "none",
+      "states_visible": "default only"
+    },
+    {
+      "component_type": "logo badge / favicon",
+      "shape": "50% circular",
+      "size_approximate": "28–32px diameter",
+      "background": "#1A3A1A dark green",
+      "border": "none",
+      "shadow": "none",
+      "states_visible": "default only"
+    },
+    {
+      "component_type": "scrolling marquee ribbon",
+      "shape": "diagonal rectangular band, full-width rotated ~-20deg",
+      "size_approximate": "~40px height band, viewport-wide",
+      "background": "#F5F0E8 off-white / cream",
+      "border": "none",
+      "shadow": "soft drop shadow #000 30% opacity, blur 20px",
+      "states_visible": "scrolling/animated default"
+    },
+    {
+      "component_type": "partner logo strip",
+      "shape": "square / full-width",
+      "size_approximate": "56px height",
+      "background": "#060806",
+      "border": "none",
+      "shadow": "none",
+      "states_visible": "default only"
+    },
+    {
+      "component_type": "3D hero illustration",
+      "shape": "boxy square with ~24–32px rounded corners",
+      "size_approximate": "~320–380px height",
+      "background": "transparent — composited over page",
+      "border": "none",
+      "shadow": "diffuse ambient #000 60% opacity, blur 60px beneath character",
+      "states_visible": "default centered display; possible idle float animation"
+    }
+  ],
+  "design_style": {
+    "aesthetic_tags": [
+      "dark-mode",
+      "bold-typography",
+      "editorial",
+      "agency",
+      "high-contrast",
+      "cinematic",
+      "warm-accent",
+      "futuristic",
+      "premium",
+      "3D-illustration",
+      "kinetic-typography",
+      "monochromatic-base"
+    ],
+    "visual_hierarchy_strength": "strong — oversized centered headline commands immediate attention, single vibrant green accent on primary CTA creates clear action focus, 3D character anchors visual weight at center",
+    "contrast_level": "high",
+    "color_temperature": "cool",
+    "vibrancy": "vibrant",
+    "drama": "dramatic",
+    "design_consistency": "highly systematic",
+    "primary_design_language": "Dark-mode AI product hero with near-black background, oversized centered display typography, a single vivid green accent (#A8FF3E–#22C55E gradient) on the primary CTA, a 3D boxy robot character as central focal illustration, and kinetic diagonal marquee text ribbons reinforcing motion and brand energy"
+  }
+}
