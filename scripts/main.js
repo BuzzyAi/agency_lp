@@ -72,29 +72,6 @@ function startAutoplay() {
 startAutoplay();
 
 
-// ── Contact form ─────────────────────────────────────────────
-const form      = document.querySelector('.contact-form');
-const submitBtn = document.getElementById('submit-btn');
-
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  submitBtn.textContent = 'Enviando...';
-  submitBtn.disabled = true;
-
-  await new Promise(r => setTimeout(r, 1200));
-
-  submitBtn.textContent = 'Mensagem enviada';
-  submitBtn.style.background = '#10B981';
-
-  setTimeout(() => {
-    submitBtn.textContent = 'Enviar';
-    submitBtn.style.background = '';
-    submitBtn.disabled = false;
-    form.reset();
-  }, 3500);
-});
-
-
 // ── Smooth anchor scroll with nav offset ─────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {

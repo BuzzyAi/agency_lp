@@ -25,8 +25,8 @@
   --honey-deep:  #2A1F00;
   --honey-deep2: #1A1300;
 
-  --font-display: 'Syne', system-ui, sans-serif;
-  --font-body:    'DM Sans', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
 
   --radius-pill: 9999px;
   --radius-lg:   24px;
@@ -1183,110 +1183,69 @@ body {
   padding-block: clamp(80px, 10vw, 120px);
 }
 
-.contact-layout {
-  display: grid;
-  grid-template-columns: 1fr 1.6fr;
-  gap: 80px;
-  align-items: start;
+.contact-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
 }
 
-.contact-info { padding-top: 8px; }
+.contact-center-text { max-width: 52ch; }
 
 .contact-headline {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   letter-spacing: -0.025em;
-  line-height: 1.15;
+  line-height: 1.1;
   color: var(--text);
   margin-top: 12px;
   margin-bottom: 16px;
 }
 
 .contact-sub {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--muted);
-  line-height: 1.65;
-  margin-bottom: 40px;
+  line-height: 1.7;
 }
 
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.contact-detail {
-  display: flex;
+/* WhatsApp CTA button */
+.whatsapp-btn {
+  display: inline-flex;
   align-items: center;
   gap: 12px;
-  font-size: 0.875rem;
-  color: var(--muted);
+  padding: 0 36px;
+  height: 56px;
+  border-radius: var(--radius-pill);
+  background: var(--honey);
+  color: var(--bg);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+  white-space: nowrap;
 }
 
-.contact-detail-icon {
-  width: 18px;
-  height: 18px;
-  color: var(--honey);
-  opacity: 0.8;
+.whatsapp-btn:hover {
+  background: var(--honey-h);
+  box-shadow: 0 0 56px rgba(245, 184, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.whatsapp-icon {
+  width: 22px;
+  height: 22px;
   flex-shrink: 0;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-field {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  border-bottom: 1px solid var(--border);
-  padding-block: 24px;
-}
-
-.form-field:first-child { padding-top: 0; }
-
-.form-label {
-  font-size: 0.7rem;
+.contact-number {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
   font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.04em;
   color: var(--muted-2);
-}
-
-.form-input,
-.form-textarea {
-  background: transparent;
-  border: none;
-  outline: none;
-  color: var(--text);
-  font-family: var(--font-body);
-  font-size: 0.9375rem;
-  width: 100%;
-  transition: color 0.2s;
-}
-
-.form-input::placeholder,
-.form-textarea::placeholder { color: var(--muted-2); }
-
-.form-input:focus::placeholder,
-.form-textarea:focus::placeholder { color: var(--border-sub); }
-
-.form-field:focus-within .form-label { color: var(--honey); }
-.form-field:focus-within { border-bottom-color: var(--honey); }
-
-.form-textarea {
-  resize: none;
-  min-height: 100px;
-  line-height: 1.65;
-}
-
-.form-submit-row {
-  padding-top: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
 }
 
 
@@ -1417,7 +1376,6 @@ body {
   .robot-img,
   .robot-video    { width: 360px; height: 360px; }
   .about-layout   { grid-template-columns: 1fr; }
-  .contact-layout { grid-template-columns: 1fr; }
   .faq-layout     { grid-template-columns: 1fr; }
   .process-layout { grid-template-columns: 1fr; }
   .footer-top     { grid-template-columns: 1fr 1fr; }
