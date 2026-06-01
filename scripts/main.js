@@ -1,3 +1,34 @@
+// ── Mobile menu ──────────────────────────────────────────────
+(function () {
+  const btn  = document.getElementById('nav-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  if (!btn || !menu) return;
+
+  function close() {
+    btn.classList.remove('open');
+    menu.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+    menu.setAttribute('aria-hidden', 'true');
+  }
+
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    const isOpen = btn.classList.contains('open');
+    isOpen ? close() : (
+      btn.classList.add('open'),
+      menu.classList.add('open'),
+      btn.setAttribute('aria-expanded', 'true'),
+      menu.setAttribute('aria-hidden', 'false')
+    );
+  });
+
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+  document.addEventListener('click', e => {
+    if (!btn.contains(e.target) && !menu.contains(e.target)) close();
+  });
+})();
+
+
 // ── Hero particle system ─────────────────────────────────────
 (function () {
   const canvas = document.getElementById('hero-particles');
