@@ -1,3 +1,60 @@
+// ── Hero particle system ─────────────────────────────────────
+(function () {
+  const canvas = document.getElementById('hero-particles');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let W, H, particles;
+
+  const PARTICLE_COUNT = 55;
+  const HONEY = 'rgba(245,184,0,';
+
+  function resize() {
+    const hero = document.getElementById('hero');
+    W = canvas.width  = hero.offsetWidth;
+    H = canvas.height = hero.offsetHeight;
+  }
+
+  function rand(min, max) { return Math.random() * (max - min) + min; }
+
+  function createParticle() {
+    return {
+      x: rand(0, W),
+      y: rand(0, H),
+      r: rand(0.8, 2.2),
+      vx: rand(-0.15, 0.15),
+      vy: rand(-0.25, -0.05),
+      alpha: rand(0.1, 0.45),
+      da: rand(0.002, 0.006) * (Math.random() < 0.5 ? 1 : -1),
+    };
+  }
+
+  function init() {
+    resize();
+    particles = Array.from({ length: PARTICLE_COUNT }, createParticle);
+  }
+
+  function tick() {
+    ctx.clearRect(0, 0, W, H);
+    for (const p of particles) {
+      p.x  += p.vx;
+      p.y  += p.vy;
+      p.alpha += p.da;
+      if (p.alpha <= 0.05 || p.alpha >= 0.5) p.da *= -1;
+      if (p.y < -4) { p.y = H + 4; p.x = rand(0, W); }
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = HONEY + p.alpha.toFixed(2) + ')';
+      ctx.fill();
+    }
+    requestAnimationFrame(tick);
+  }
+
+  window.addEventListener('resize', () => { resize(); });
+  init();
+  tick();
+})();
+
+
 // ── Nav scroll behavior ──────────────────────────────────────
 const nav = document.getElementById('nav');
 const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 20);

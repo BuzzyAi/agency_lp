@@ -121,15 +121,20 @@ body {
 
 .nav-logo-mark {
   width: 32px;
-  height: 37px;
+  height: 32px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  filter: drop-shadow(0 2px 8px rgba(245, 184, 0, 0.35));
 }
 
-.nav-logo-mark svg { width: 32px; height: 37px; }
+.nav-logo-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  object-fit: cover;
+  display: block;
+}
 
 .nav-logo-text {
   font-family: var(--font-display);
@@ -241,18 +246,92 @@ section {
   max-width: 980px;
 }
 
-/* Brand mark above headline */
-.hero-mark {
-  width: 56px;
-  height: 64px;
-  margin-bottom: 32px;
-  filter: drop-shadow(0 0 24px rgba(245, 184, 0, 0.5));
-  animation: mark-pulse 4s ease-in-out infinite;
+/* Aurora background blobs */
+.hero-aurora {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
 }
 
-@keyframes mark-pulse {
-  0%, 100% { filter: drop-shadow(0 0 16px rgba(245, 184, 0, 0.4)); }
-  50%       { filter: drop-shadow(0 0 32px rgba(245, 184, 0, 0.7)); }
+.hero-aurora-1 {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245, 184, 0, 0.13) 0%, transparent 65%);
+  top: -200px;
+  left: -200px;
+  animation: aurora-1 14s ease-in-out infinite;
+}
+
+.hero-aurora-2 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245, 184, 0, 0.08) 0%, transparent 65%);
+  top: 30%;
+  right: -150px;
+  animation: aurora-2 11s ease-in-out infinite;
+}
+
+.hero-aurora-3 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245, 184, 0, 0.06) 0%, transparent 65%);
+  bottom: -100px;
+  left: 40%;
+  animation: aurora-3 9s ease-in-out infinite;
+}
+
+@keyframes aurora-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(90px, 70px) scale(1.1); }
+  66%       { transform: translate(-50px, 40px) scale(0.92); }
+}
+
+@keyframes aurora-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%       { transform: translate(-70px, 50px) scale(1.18); }
+}
+
+@keyframes aurora-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  40%       { transform: translate(40px, -60px) scale(1.12); }
+  80%       { transform: translate(-30px, 20px) scale(0.88); }
+}
+
+/* Particle canvas */
+#hero-particles {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Hex bg animated */
+.hero-hex-bg {
+  animation: hex-spin-center 60s linear infinite;
+}
+
+@keyframes hex-spin-center {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.hero-hex-bg-2 {
+  animation: hex-drift 40s ease-in-out infinite;
+}
+
+@keyframes hex-drift {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50%       { transform: rotate(180deg) scale(1.08); }
 }
 
 .hero-proof {
@@ -267,6 +346,12 @@ section {
   height: 6px;
   border-radius: 50%;
   background: var(--honey);
+  animation: dot-pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes dot-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(245, 184, 0, 0.5); }
+  50%       { box-shadow: 0 0 0 5px rgba(245, 184, 0, 0); }
 }
 
 .hero-headline {
@@ -281,7 +366,23 @@ section {
 
 .hero-headline em {
   font-style: normal;
-  color: var(--honey);
+  background: linear-gradient(
+    90deg,
+    var(--honey) 0%,
+    #FFE566 35%,
+    var(--honey) 55%,
+    var(--honey-h) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: text-shimmer 3.5s linear infinite;
+}
+
+@keyframes text-shimmer {
+  from { background-position: 0% center; }
+  to   { background-position: 200% center; }
 }
 
 .hero-tagline {
@@ -550,6 +651,8 @@ section {
   padding: 48px 40px;
   transition: background 0.2s;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-item:hover { background: var(--surface); }
@@ -591,6 +694,7 @@ section {
   color: var(--muted);
   line-height: 1.7;
   margin-bottom: 20px;
+  flex: 1;
 }
 
 .service-detail {
@@ -1274,9 +1378,19 @@ section {
 
 .footer-logo-mark {
   width: 28px;
-  height: 32px;
+  height: 28px;
   flex-shrink: 0;
-  filter: drop-shadow(0 1px 4px rgba(245, 184, 0, 0.25));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  object-fit: cover;
+  display: block;
 }
 
 .footer-logo-text {
