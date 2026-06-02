@@ -15,8 +15,8 @@
   /* Text */
   --text:        #F5F0E8;
   --text-soft:   #EDE6D6;
-  --muted:       #8A7B62;
-  --muted-2:     #574D3A;
+  --muted:       #a39376;
+  --muted-2:     #8A7B62;
 
   /* Brand — honey */
   --honey:       #F5B800;
@@ -944,6 +944,7 @@ section {
 #process {
   background: var(--bg);
   padding-block: clamp(80px, 10vw, 120px);
+  overflow: visible;
 }
 
 .process-layout {
@@ -1011,6 +1012,7 @@ section {
 }
 
 .process-visual {
+  align-self: start;
   position: sticky;
   top: 96px;
 }
@@ -1447,7 +1449,7 @@ section {
 ══════════════════════════════════════════ */
 #cta-section {
   background: linear-gradient(to bottom, var(--bg) 0%, #180F00 100%);
-  padding-block: clamp(80px, 12vw, 140px);
+  padding-block: clamp(180px, 12vw, 140px);
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -1768,7 +1770,9 @@ section {
   .mobile-menu    { display: flex; }
 
   /* Hero */
-  .hero-content   { padding-top: 96px; padding-bottom: 60px; }
+  #hero            { min-height: auto; }
+  .hero-video-wrap { display: none !important; }
+  .hero-content   { padding-top: 96px; padding-bottom: 36px; }
   .hero-hex-bg    { width: 340px; height: 340px; }
   .hero-actions   { flex-direction: column; width: 100%; }
   .hero-actions .btn-primary,
