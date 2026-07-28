@@ -1763,16 +1763,13 @@ section {
 
 /* ── Mobile (≤ 768px) ── */
 @media (max-width: 768px) {
-  /* Nav */
-  .nav-links      { display: none; }
-  .nav-cta        { display: none; }
-  .nav-menu-btn   { display: flex; }
-  .mobile-menu    { display: flex; }
+  /* Nav — hidden on mobile */
+  #nav            { display: none; }
 
   /* Hero */
   #hero            { min-height: auto; }
   .hero-video-wrap { display: none !important; }
-  .hero-content   { padding-top: 96px; padding-bottom: 36px; }
+  .hero-content   { padding-top: 48px; padding-bottom: 36px; }
   .hero-hex-bg    { width: 340px; height: 340px; }
   .hero-actions   { flex-direction: column; width: 100%; }
   .hero-actions .btn-primary,
