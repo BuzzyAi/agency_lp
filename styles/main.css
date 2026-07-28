@@ -1766,14 +1766,28 @@ section {
   /* Nav — hidden on mobile */
   #nav            { display: none; }
 
-  /* Hero */
-  #hero            { min-height: auto; }
+  /* Hero — compact, no video, no decorative overflow */
+  #hero            { min-height: auto; overflow: hidden; }
   .hero-video-wrap { display: none !important; }
-  .hero-content   { padding-top: 48px; padding-bottom: 36px; }
-  .hero-hex-bg    { width: 340px; height: 340px; }
-  .hero-actions   { flex-direction: column; width: 100%; }
+  .hero-content   { flex: unset; padding-top: 48px; padding-bottom: 24px; }
+  .hero-headline  { font-size: clamp(2.4rem, 10vw, 3.5rem); }
+  .hero-tagline   { font-size: clamp(1.1rem, 4vw, 1.4rem); margin-bottom: 12px; }
+  .hero-sub        { margin-bottom: 10px; }
+  .hero-hex-bg    { width: 260px; height: 260px; }
+  .hero-hex-bg-2  { display: none; }
+  .hero-aurora-1,
+  .hero-aurora-2,
+  .hero-aurora-3  { display: none; }
+  .hero-actions   { flex-direction: column; width: 100%; margin-top: 8px; }
   .hero-actions .btn-primary,
   .hero-actions .btn-ghost { width: 100%; justify-content: center; }
+
+  /* Global section spacing — tighter on mobile */
+  .section-header { margin-bottom: 36px; }
+  section          { padding-block: clamp(48px, 8vw, 80px); }
+  #services        { padding-block: clamp(48px, 8vw, 80px); }
+
+  /* Section glow effects — simplified on mobile */
   .section-glow::before { left: 50%; transform: translateX(-50%); }
   .section-glow::after { right: 50%; transform: translateX(50%); }
   .section-hex-center { left: auto; right: -20px; top: auto; bottom: 14%; transform: none; }
